@@ -1,0 +1,290 @@
+@import "./assets.css";
+
+/* Isi content/section */
+
+.title {
+  font-family: "Bebas Neue", cursive;
+  color: var(--main-white);
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.form-reg {
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+}
+
+.block-content {
+  background-image: url("../images/background/pre-register-background.jpg");
+  padding: 200px 0;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 1px solid var(--main-black);
+  color: var(--main-black);
+  border-radius: 20px;
+  padding-left: 10px;
+  width: 400px;
+  height: 40px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 1px solid var(--main-black);
+  color: var(--main-black);
+}
+
+[type="date"] {
+  border: 1px solid var(--main-black);
+  color: var(--main-black);
+  border-radius: 20px;
+  padding-left: 10px;
+  width: 190px;
+  height: 40px;
+}
+
+[type="date"]:focus {
+  outline: none;
+  border: 1px solid var(--main-black);
+  color: var(--main-black);
+}
+
+.dob-nat {
+  display: flex;
+  justify-content: center;
+}
+
+.DateOfBirth {
+  margin-top: 10px;
+}
+
+.Nationality {
+  flex-flow: column;
+  margin-left: 10px;
+  margin-top: -8px;
+}
+
+.Nationality select {
+  border: 1px solid var(--main-black);
+  border-radius: 20px;
+  height: 20px;
+  padding: 10px;
+}
+
+#nationality {
+  width: 180px;
+  max-height: 200px;
+}
+
+.check {
+  position: relative;
+  text-align: left;
+  height: 40px;
+  padding-top: 10px;
+}
+
+.check b {
+  text-align: left;
+  margin-top: -8px;
+  margin-left: 25px;
+  font-size: 20px;
+  color: var(--main-white);
+}
+
+.check label {
+  background-color: var(--main-white);
+  border: 1px solid var(--main-gray);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  top: 10px;
+  position: absolute;
+  width: 20px;
+}
+
+.check input[type="checkbox"]:checked + label {
+  background-color: var(--cyber-blue);
+  border-color: var(--cyber-blue);
+}
+
+.btn-register {
+  margin-bottom: 100px;
+}
+
+input[type="submit"] {
+  background-color: var(--cyber-red);
+  padding: 14px 24px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  border-radius: 5px;
+  color: var(--main-white);
+}
+
+/* Akhir isi content/section */
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .konten hr {
+    display: none;
+  }
+  .enter {
+    display: inline;
+  }
+}
+
+@media (max-width: 550px) {
+  .block-content {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+  }
+
+  [type="date"] {
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 140px;
+    height: 40px;
+  }
+
+  [type="date"]:focus {
+    outline: none;
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+  }
+
+  .dob-nat {
+    display: flex;
+  }
+
+  .DateOfBirth {
+    margin-top: 10px;
+  }
+
+  .Nationality {
+    flex-flow: column;
+    margin-left: 10px;
+    margin-top: -8px;
+  }
+
+  #nationality {
+    width: 130px;
+  }
+}
+
+@media (max-width: 330px) {
+  input[type="text"],
+  input[type="password"] {
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+  }
+
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+  }
+
+  [type="date"] {
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+    border-radius: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 90px;
+    height: 40px;
+  }
+
+  [type="date"]:focus {
+    outline: none;
+    border: 1px solid var(--main-black);
+    color: var(--main-black);
+  }
+
+  .DateOfBirth {
+    margin-top: 10px;
+  }
+
+  .Nationality {
+    flex-flow: column;
+    margin-left: 10px;
+    margin-top: -8px;
+  }
+
+  #nationality {
+    width: 80px;
+  }
+
+  .check b {
+    font-size: 12px;
+  }
+}
+
+@media (min-height: 900px) {
+  .block-content {
+    height: 600px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .block-content {
+    height: 700px;
+    padding-top: 200px;
+  }
+}
+
+@media (min-height: 1100px) {
+  .block-content {
+    height: 800px;
+    padding-top: 300px;
+  }
+}
+
+@media (min-height: 1200px) {
+  .block-content {
+    height: 850px;
+    padding-top: 350px;
+  }
+}
+
+@media (min-height: 1260px) {
+  .block-content {
+    height: 950px;
+    padding-top: 450px;
+  }
+}

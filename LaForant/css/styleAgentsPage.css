@@ -1,0 +1,296 @@
+@import "./assets.css";
+
+/* Carousel */
+
+.carousel {
+  background-image: url("../images/background/cyberpunk-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 220px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.slider-wrapper {
+  width: 900px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.inner-wrapper {
+  width: 500%;
+  height: 100%;
+  position: relative;
+  left: -100%;
+}
+
+.slide {
+  width: calc(100% / 5);
+  height: 100%;
+  float: left;
+  font-size: 100px;
+  color: var(--main-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agent-1 {
+  background: url("../images/banner/romana-banner.png");
+  text-decoration: none;
+}
+
+.agent-2 {
+  background: url("../images/banner/kalindra-banner.png");
+  text-decoration: none;
+}
+
+.agent-3 {
+  background: url("../images/banner/drake-banner.png");
+  text-decoration: none;
+}
+
+.agent-4 {
+  background: url("../images/banner/dark-banner.png");
+  text-decoration: none;
+}
+
+.agent-5 {
+  background: url("../images/banner/keitha-banner.png");
+  text-decoration: none;
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid var(--main-black);
+  position: absolute;
+  cursor: pointer;
+}
+
+.prev {
+  border-left: 2px solid var(--main-black);
+  left: 10%;
+  transform: rotate(-45deg);
+}
+
+.next {
+  border-right: 2px solid var(--main-black);
+  right: 10%;
+  transform: rotate(45deg);
+}
+
+.content {
+  display: none;
+}
+
+/* Akhir Carousel */
+
+/* Agent Romana */
+
+.agent-romana {
+  display: none;
+  background-image: url("../images/background/cyberpunk-background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 60px 0 0;
+}
+
+.agent-image {
+  width: 40%;
+  float: left;
+}
+
+.agent-image > img {
+  width: 100%;
+}
+
+.agent-romana-text {
+  width: 60%;
+  float: left;
+  padding: 35px 10%;
+  box-sizing: border-box;
+}
+
+/* Akhir Agent Romana */
+
+/* Agent Kalindra */
+
+.agent-kalindra {
+  display: none;
+  background-image: url("../images/background/cyberpunk-background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 30px 0;
+}
+
+.agent-kalindra-text {
+  width: 60%;
+  float: left;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+/* Akhir Agent Kalindra */
+
+/* Agent Drake */
+
+.agent-drake {
+  display: none;
+  background-image: url("../images/background/cyberpunk-background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+
+.agent-drake-text {
+  width: 60%;
+  float: left;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+.agent-drake-text > div > h3 {
+  color: var(--cyber-red);
+}
+
+/* Akhir Agent Drake */
+
+/* Agent Dark */
+
+.agent-dark {
+  display: none;
+  background-image: url("../images/background/cyberpunk-background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+
+.agent-dark-text {
+  width: 60%;
+  float: left;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+.agent-dark-text > div > h3 {
+  color: var(--cyber-red);
+}
+
+/* Akhir Agent Dark */
+
+/* Agent Keitha */
+
+.agent-keitha {
+  display: none;
+  background-image: url("../images/background/cyberpunk-background-4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 60px 0;
+}
+
+.agent-keitha-text {
+  width: 60%;
+  float: left;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+.agent-keitha-text > div > h3 {
+  color: var(--cyber-red);
+}
+
+/* Akhir Agent Keitha */
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .agent-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .agent-image > img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .agent-image {
+    width: 80%;
+  }
+
+  /* Agent Romana */
+  .agent-romana {
+    padding: 40px 0;
+    height: 180%;
+  }
+
+  .agent-romana-text {
+    width: 100%;
+    padding: 40px 0;
+  }
+  /* Akhir Agent Romana */
+
+  /* Agent Kalindra */
+  .agent-kalindra {
+    padding: 40px 0;
+  }
+
+  .agent-kalindra-text {
+    width: 100%;
+    padding: 0;
+  }
+  /* Akhir Agent Kalindra */
+
+  /* Agent Drake */
+  .agent-drake {
+    padding: 40px 0;
+  }
+
+  .agent-drake-text {
+    width: 100%;
+    padding: 0;
+  }
+  /* Akhir Agent Drake */
+
+  /* Agent Dark */
+  .agent-dark {
+    padding: 40px 0;
+  }
+
+  .agent-dark-text {
+    width: 100%;
+    padding: 0;
+  }
+  /* Akhir Agent Dark */
+
+  /* Agent Keitha */
+  .agent-keitha {
+    padding: 40px 0;
+    height: 180%;
+  }
+
+  .agent-keitha-text {
+    width: 100%;
+    padding: 40px 0;
+  }
+  /* Akhir Agent Keitha */
+}

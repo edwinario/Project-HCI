@@ -1,0 +1,256 @@
+@import "./assets.css";
+
+/* Introduction */
+.introduction {
+  background-image: url("../images/background/cyberpunk-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 120px 0;
+}
+
+.agent-image {
+  width: 45%;
+  float: left;
+}
+
+.agent-image > img {
+  width: 100%;
+}
+
+.content-heading {
+  letter-spacing: 0;
+  font-size: 49px;
+}
+
+.introduction-text {
+  width: 55%;
+  float: left;
+  padding: 35px 10%;
+  box-sizing: border-box;
+}
+/* Akhir Introduction */
+
+/* Agents */
+.agents {
+  background-image: url("../images/background/cyberpunk-background-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 60px 0;
+}
+
+.agent-text {
+  width: 53%;
+  float: left;
+  padding: 50px 10%;
+  box-sizing: border-box;
+}
+
+.title-agent {
+  font-family: "Bebas Neue", cursive;
+  color: var(--main-yellow);
+  font-size: 25px;
+  float: center;
+}
+
+.intro-agent {
+  margin-top: 10px;
+  color: var(--main-white);
+  float: left;
+  font-size: 25pt;
+  text-align: justify;
+}
+
+.intro-agent > p {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+
+.btn-agent {
+  margin-top: 10px;
+  background-color: var(--cyber-blue);
+  padding: 24px 34px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-agent > p {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.btn-agent :hover {
+  opacity: 0.8;
+}
+
+.agent-image {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.content2-image img {
+  width: 120%;
+}
+/* Akhir Agents */
+
+/* Maps */
+.info-map {
+  background-image: url("../images/background/cyberpunk-background-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  float: left;
+  padding: 100px 0 200px 0;
+}
+
+.title-map {
+  font-family: "Bebas Neue", cursive;
+  color: var(--main-white);
+  font-size: 25px;
+  float: center;
+}
+
+.map-content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  float: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.map1-picture img {
+  width: 280px;
+  height: 180px;
+}
+
+.map1-title {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--main-white);
+  font-size: 28px;
+}
+
+.map1-text {
+  margin-top: 10px;
+  text-align: justify;
+  color: var(--main-white);
+  width: 280px;
+  font-size: 22px;
+}
+
+.map2-picture img {
+  width: 280px;
+  height: 180px;
+}
+
+.map2-title {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--main-white);
+  font-size: 28px;
+}
+
+.map2-text {
+  margin-top: 10px;
+  text-align: justify;
+  color: var(--main-white);
+  width: 286px;
+  font-size: 22px;
+}
+
+.map3-picture img {
+  width: 280px;
+  height: 180px;
+}
+
+.map3-title {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--main-white);
+  font-size: 28px;
+}
+
+.map3-text {
+  margin-top: 10px;
+  text-align: justify;
+  color: var(--main-white);
+  width: 286px;
+  font-size: 22px;
+}
+/* Akhir Maps */
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  /* Introduction */
+  .introduction {
+    padding: 60px 0;
+  }
+
+  .content-heading {
+    font-size: 32px;
+    margin-bottom: 5px;
+  }
+
+  .agent-image {
+    width: 100%;
+  }
+
+  .introduction-text {
+    width: 100%;
+    padding: 0;
+  }
+  /* Akhir Introduction */
+
+  /* Agent */
+  .agents {
+    padding: 65px 0;
+  }
+
+  .agent-image {
+    width: 80%;
+  }
+
+  .agent-text {
+    width: 100%;
+    padding: 0;
+  }
+  /* Akhir Agent */
+
+  /* Maps */
+  .info-map {
+    padding: 70px 0;
+  }
+
+  .map-content {
+    width: 100%;
+  }
+
+  .map1-picture img,
+  .map2-picture img,
+  .map3-picture img {
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .map1-text,
+  .map2-text,
+  .map3-text {
+    width: 100%;
+    font-size: 20px;
+    padding: 0;
+  }
+  /* Akhir Maps */
+}
+
+@media screen and (max-width: 420px) {
+  .content-heading {
+    font-size: 23.5px;
+  }
+}
